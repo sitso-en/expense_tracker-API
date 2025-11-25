@@ -1,0 +1,31 @@
+2025-11-24 09:23:12,276 WARNING Not Found: /
+2025-11-24 09:23:12,278 WARNING "GET / HTTP/1.1" 404 2756
+2025-11-24 09:23:36,897 WARNING Not Found: /
+2025-11-24 09:23:36,899 WARNING "GET / HTTP/1.1" 404 2756
+2025-11-24 09:23:38,384 WARNING Not Found: /
+2025-11-24 09:23:38,384 WARNING "GET / HTTP/1.1" 404 2756
+2025-11-24 09:28:26,986 WARNING Not Found: /
+2025-11-24 09:28:26,986 WARNING "GET / HTTP/1.1" 404 2756
+2025-11-24 09:28:34,256 WARNING Not Found: /log/
+2025-11-24 09:28:34,256 WARNING "GET /log/ HTTP/1.1" 404 2786
+2025-11-24 09:28:39,030 WARNING Not Found: /log/
+2025-11-24 09:28:39,032 WARNING "GET /log/ HTTP/1.1" 404 2786
+2025-11-24 09:31:59,442 WARNING Not Found: /log/
+2025-11-24 09:31:59,447 WARNING "GET /log/ HTTP/1.1" 404 2786
+2025-11-24 09:33:33,685 WARNING This is a warning message
+2025-11-24 09:34:35,404 WARNING Not Found: /expense/expenses/log/
+2025-11-24 09:34:35,408 WARNING "GET /expense/expenses/log/ HTTP/1.1" 404 15848
+2025-11-24 09:34:44,674 WARNING This is a warning message
+2025-11-24 09:35:12,093 WARNING This is a warning message
+2025-11-24 09:35:12,180 ERROR Internal Server Error: /expense/log/
+Traceback (most recent call last):
+  File "C:\Users\exlma\AppData\Local\pypoetry\Cache\virtualenvs\gibson-IunG2nQe-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\exlma\AppData\Local\pypoetry\Cache\virtualenvs\gibson-IunG2nQe-py3.11\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\exlma\AppData\Local\pypoetry\Cache\virtualenvs\gibson-IunG2nQe-py3.11\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view expenses.views.log didn't return an HttpResponse object. It returned None instead.
+2025-11-24 09:35:12,186 ERROR "GET /expense/log/ HTTP/1.1" 500 70096
+2025-11-24 09:35:49,757 WARNING This is a warning message
